@@ -1,10 +1,15 @@
 
-import {Outlet} from "react-router-dom";
+import {NavLink, Outlet} from "react-router-dom";
+import Footer from "../components/Footer";
+import Home from "../pages/home/Home";
+import Navber from "../components/Navber";
 
 const Root = () => {
     return (
         <div>
-            <Outlet></Outlet>
+            <Navber></Navber>
+            <Outlet></Outlet><br /><br /><br />
+            <Footer></Footer>
         </div>
     );
 };

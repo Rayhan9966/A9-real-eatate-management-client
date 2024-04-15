@@ -1,6 +1,6 @@
 [
   {
-    "image": "relevant_image1.jpg",
+    "image": "https://i.postimg.cc/8cCxbKGC/images.jpg",
     "estate_title": "Luxury Beachfront Villa",
     "id": "001",
     "segment_name": "Residential",
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "relevant_image2.jpg",
+    "image": "https://i.postimg.cc/pTCgzNg7/images-2.jpg",
     "estate_title": "Modern Downtown Apartment",
     "id": "002",
     "segment_name": "Residential",
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "relevant_image3.jpg",
+    "image": "https://i.postimg.cc/gk7bgWnb/247f8a4c217e5e231da17f5e4de32f16.jpg",
     "estate_title": "Charming Countryside Cottage",
     "id": "003",
     "segment_name": "Residential",
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "relevant_image4.jpg",
+    "image": "https://i.postimg.cc/sx6CdFmS/jasa-bangun-rumah-murah-jogja.jpg",
     "estate_title": "Luxury Lakeside Mansion",
     "id": "004",
     "segment_name": "Residential",
