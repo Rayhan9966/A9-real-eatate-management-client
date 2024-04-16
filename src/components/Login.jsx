@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Login = () => {
-const {loginUser} =useContext(AuthContext)
+const {loginUser,googleLogin} =useContext(AuthContext)
 
 
 
@@ -16,9 +16,12 @@ const {loginUser} =useContext(AuthContext)
         const password=e.target.password.value;
 console.log(email,password)
 loginUser(email,password)
-       
+       }
 
-    }
+       const handleGoogleLogin=()=>{
+        googleLogin()
+        .then(result=>console.log(result))
+       }
     return (
         <div>
           <div className="hero min-h-screen bg-base-200">
@@ -51,6 +54,7 @@ loginUser(email,password)
           <button className="btn btn-primary">Login</button>
         </div>
       </form>
+      <button onClick={handleGoogleLogin}>Google login</button>
     </div>
   </div>
 </div>

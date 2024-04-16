@@ -34,8 +34,6 @@ setError('')
 setEmailError('')
 console.log(name,photo,email,password)
 registerUser(email,password)
-.then(result=>console.log(result.user))
-.catch(error=>setError(error.message))
        
 
     }
