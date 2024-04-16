@@ -8,6 +8,8 @@ import Contact from "../pages/Contact";
 import About from "../pages/About";
 import Login from "../components/Login";
 import Register from "../components/Register";
+import EstatesDetails from "../pages/EstatesDetails";
+import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
 
 const router = createBrowserRouter([
 
@@ -33,7 +35,9 @@ const router = createBrowserRouter([
         {
 
             path:'/about',
-            element:<About></About>
+            element:<ProtectedRoute>
+                <About></About>
+            </ProtectedRoute>
         },
         {
 
@@ -44,6 +48,14 @@ const router = createBrowserRouter([
 
             path:'/login',
             element:<Login></Login>
+        },
+        {
+
+            path:'/estatedetails',
+            element:<ProtectedRoute>
+                 <EstatesDetails></EstatesDetails>
+            </ProtectedRoute>
+           
         }
     ]
 }

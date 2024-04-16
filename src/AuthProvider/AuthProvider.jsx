@@ -1,20 +1,24 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword,GoogleAuthProvider, 
-    signInWithPopup,FacebookAuthProvider} from "firebase/auth";
+    signInWithPopup,FacebookAuthProvider,onAuthStateChanged,
+    signOut} from "firebase/auth";
 export const AuthContext=createContext(null)
 import {auth} from "../firebase/firebase.config"
 
 const AuthProvider = ({children}) => {
+
+    const [user,setUser]= useState(null)
+
     const googleProvider=new GoogleAuthProvider()
     const facebookProvider=new FacebookAuthProvider()
     const registerUser=(email,password)=>{
-        createUserWithEmailAndPassword(auth,email,password)
-        .then(result=>console.log(result.user));
+       return createUserWithEmailAndPassword(auth,email,password)
+        // .then(result=>console.log(result.user));
 
     }
     const loginUser=(email,password)=>{
-        signInWithEmailAndPassword(auth,email,password)
-        .then(result=>console.log(result.user));
+       return signInWithEmailAndPassword(auth,email,password)
+        // .then(result=>console.log(result.user));
 
     }
     const googleLogin=()=>{
@@ -23,13 +27,36 @@ const AuthProvider = ({children}) => {
     const facebookLogin=()=>{
         return signInWithPopup(auth,facebookProvider)
     }
+const logout=()=>{
+return signOut(auth)
 
+}
 const authInfo={
     registerUser,
     loginUser,
-    googleLogin
+    googleLogin,
+    facebookLogin,
+    user,
+    setUser,
+    logout
+    
 }
+useEffect(()=>{
 
+   const unsubscribe = onAuthStateChanged (auth, (currentUser) => {
+        if (currentUser) {
+     setUser(currentUser)
+        //   const uid = user.uid;
+          // ...
+        } else {
+         setUser(null)
+        }
+      });
+      return()=>{
+        unsubscribe()
+      }
+
+},[])
     return (
         <div>
           {/* <AuthContext.Provider value={user}>  {children}</AuthContext.Provider> */}

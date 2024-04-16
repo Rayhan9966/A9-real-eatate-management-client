@@ -1,9 +1,12 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useEffect } from 'react';
+import { Link,useLocation,useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Login = () => {
-const {loginUser,googleLogin,facebookLogin} =useContext(AuthContext)
+const {loginUser,googleLogin,facebookLogin,setUser,user} =useContext(AuthContext)
+const location= useLocation()
+const navigate=useNavigate()
+console.log(location);
 
 
 
@@ -20,12 +23,19 @@ loginUser(email,password)
 
        const handleGoogleLogin=()=>{
         googleLogin()
-        .then(result=>console.log(result))
+        .then(result=>setUser(result))
        }
        const handleFacebookLogin=()=>{
         facebookLogin()
-        .then(result=>console.log(result))
+        .then(result=>setUser(result))
        }
+
+       useEffect(()=>{
+if(user){
+  navigate(location.state)
+}
+
+       },[user])
     return (
         <div>
           <div className="hero min-h-screen bg-base-200">

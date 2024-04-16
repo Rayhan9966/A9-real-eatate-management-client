@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Navber = () => {
+  // const{user}=useContext(AuthContext)
+  const {user,logout} = useContext(AuthContext)
+  console.log(user)
     return (
         <div>
             <div className="navbar bg-base-100">
@@ -26,9 +30,18 @@ const Navber = () => {
         <li><Link to="/contact">Contact</Link></li>
       
         <li><Link to="/about">About</Link></li>
+
+       {
+        user &&  
+        <li><Link to="/estatedetails">EstatesDetails</Link></li>
+       }
     </ul>
   </div>
   <div className="navbar-end">
+    {user ? <div>
+      {user.email}
+     <Link to="/"> <button onClick={()=>logout()}>Logout</button> </Link>
+    </div>:""}
   <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">

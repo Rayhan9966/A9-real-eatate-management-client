@@ -4,8 +4,9 @@ import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Register = () => {
 
-    const {registerUser}=useContext(AuthContext)
+    const {registerUser,setUser}=useContext(AuthContext)
     const[error,setError]=useState("")
+
     const [emailError,setEmailError]= useState("")
    
 
@@ -32,8 +33,14 @@ if (!/^(?=.*[a-z])(?=.*[A-Z]).+$/
 }
 setError('')
 setEmailError('')
+
+
 console.log(name,photo,email,password)
 registerUser(email,password)
+.then(result=>{
+  setUser(result.user)
+})
+.catch(error=>setError(error.message.split("/")[1]))
        
 
     }
