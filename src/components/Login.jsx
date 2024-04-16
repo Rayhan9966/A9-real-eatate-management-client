@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Login = () => {
-const {loginUser,googleLogin} =useContext(AuthContext)
+const {loginUser,googleLogin,facebookLogin} =useContext(AuthContext)
 
 
 
@@ -20,6 +20,10 @@ loginUser(email,password)
 
        const handleGoogleLogin=()=>{
         googleLogin()
+        .then(result=>console.log(result))
+       }
+       const handleFacebookLogin=()=>{
+        facebookLogin()
         .then(result=>console.log(result))
        }
     return (
@@ -55,6 +59,7 @@ loginUser(email,password)
         </div>
       </form>
       <button onClick={handleGoogleLogin}>Google login</button>
+      <button onClick={handleFacebookLogin}>Facebook login</button>
     </div>
   </div>
 </div>
