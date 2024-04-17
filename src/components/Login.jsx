@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { Link,useLocation,useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
+import ProtectedRoute from '../routes/ProtectedRoute/ProtectedRoute';
 
 const Login = () => {
 const {loginUser,googleLogin,facebookLogin,setUser,user} =useContext(AuthContext)
@@ -65,7 +66,7 @@ if(user){
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+         <button className="btn btn-primary">Login</button>
         </div>
       </form>
       <button onClick={handleGoogleLogin}>Google login</button>

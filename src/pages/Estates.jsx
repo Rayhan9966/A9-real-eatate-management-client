@@ -4,19 +4,18 @@ import EsCard from './EsCard';
 
 
 const Estates = () => {
-  // useEffect(() => {
+ 
    
-  const property = useLoaderData();
+  const property = useLoaderData()||[]
   console.log(property);
   return (
-    <div className='grid grid-cols-3'>
+    <div className='card-body bg-base-100 gap-4 grid grid-cols-3'>
 
 {
-  property.map(aproperty =>
-    
-  <EsCard>
+  property.map(aproperty =><EsCard
     key={aproperty.id}
-    property={aproperty}
+    allproperty={aproperty}>
+   
   </EsCard>
  
 

@@ -31,6 +31,7 @@ const router = createBrowserRouter([
             loader: () => fetch('villa.json')
 
         }, 
+       
          {
 
             path:'/contact',
@@ -56,9 +57,10 @@ const router = createBrowserRouter([
         {
 
             path:'/estatedetails',
-            element:<ProtectedRoute>
-                 <EstatesDetails></EstatesDetails>
-            </ProtectedRoute>
+            element:
+            <ProtectedRoute>
+               <EstatesDetails></EstatesDetails>  
+             </ProtectedRoute>
            
         }
     ]
