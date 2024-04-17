@@ -95,5 +95,18 @@
     "area": "3000 sq ft",
     "location": "Pinecrest Estates, Mountain Wilderness"
  
+  },
+  {
+    "image": "https://i.postimg.cc/8cCxbKGC/images.jpg",
+    "estate_title": "Luxury Beachfront Villa",
+    "id": "009",
+    "segment_name": "Residential",
+    "description": "This exquisite beachfront villa offers unparalleled luxury and breathtaking ocean views. With expansive living spaces, private beach access, and resort-style amenities, it epitomizes coastal living at its finest.",
+    "price": "$5,000,000",
+    "status": "sale",
+    "area": "6000 sq ft",
+    "location": "Sunset Cove, Coastal Paradise"
+ 
+    
   }
 ]

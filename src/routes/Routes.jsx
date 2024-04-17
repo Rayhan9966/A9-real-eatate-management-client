@@ -10,6 +10,7 @@ import Login from "../components/Login";
 import Register from "../components/Register";
 import EstatesDetails from "../pages/EstatesDetails";
 import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
+import EsCard from "../pages/EsCard";
 
 const router = createBrowserRouter([
 
@@ -27,8 +28,10 @@ const router = createBrowserRouter([
 
             path:'/estates',
             element:<Estates></Estates>,
-            loader: () => fetch('JsonData.json')
-        },  {
+            loader: () => fetch('villa.json')
+
+        }, 
+         {
 
             path:'/contact',
             element:<Contact></Contact>

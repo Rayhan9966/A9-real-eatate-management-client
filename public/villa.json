@@ -1,0 +1,113 @@
+[
+    {
+      "image": "https://i.postimg.cc/8cCxbKGC/images.jpg",
+      "estate_title": "Luxury Beachfront Villa",
+      "id": "001",
+      "segment_name": "Residential",
+      "description": "This exquisite beachfront villa offers unparalleled luxury and breathtaking ocean views. With expansive living spaces, private beach access, and resort-style amenities, it epitomizes coastal living at its finest.",
+      "price": "$5,000,000",
+      "status": "sale",
+      "area": "6000 sq ft",
+      "location": "Sunset Cove, Coastal Paradise"
+   
+      
+    },
+    {
+      "image": "https://i.postimg.cc/pTCgzNg7/images-2.jpg",
+      "estate_title": "Modern Downtown Apartment",
+      "id": "002",
+      "segment_name": "Residential",
+      "description": "This sleek and contemporary apartment is situated in the heart of the bustling downtown district. Featuring state-of-the-art amenities, stunning city views, and proximity to entertainment and dining options, it offers urban living at its best.",
+      "price": "$3,500/month",
+      "status": "rent",
+      "area": "1000 sq ft",
+      "location": "Cityscape Downtown, Urban Hub"
+   
+    },
+    {
+      "image": "https://i.postimg.cc/gk7bgWnb/247f8a4c217e5e231da17f5e4de32f16.jpg",
+      "estate_title": "Charming Countryside Cottage",
+      "id": "003",
+      "segment_name": "Residential",
+      "description": "Escape to this idyllic countryside cottage surrounded by rolling hills and serene landscapes. With rustic charm, modern comforts, and a tranquil atmosphere, it's the perfect retreat from the hustle and bustle of city life.",
+      "price": "$400,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "Tranquil Meadows, Rural Countryside"
+     
+    },
+    {
+      "image": "https://i.postimg.cc/sx6CdFmS/jasa-bangun-rumah-murah-jogja.jpg",
+      "estate_title": "Luxury Lakeside Mansion",
+      "id": "004",
+      "segment_name": "Residential",
+      "description": "Indulge in luxury living with this magnificent lakeside mansion boasting panoramic views and unparalleled elegance. With sprawling grounds, a private dock, and lavish amenities, it's a dream home for the discerning buyer.",
+      "price": "$7,500,000",
+      "status": "sale",
+      "area": "8000 sq ft",
+      "location": "Serenity Lake Estates, Lakeside Haven"
+     
+    },
+    {
+      "image": "relevant_image5.jpg",
+      "estate_title": "Cozy Mountain Chalet",
+      "id": "005",
+      "segment_name": "Residential",
+      "description": "Embrace the tranquility of mountain living in this charming chalet nestled amidst snow-capped peaks and alpine forests. With warm and inviting interiors, stunning views, and proximity to ski resorts, it's a haven for outdoor enthusiasts.",
+      "price": "$600,000",
+      "status": "sale",
+      "area": "2500 sq ft",
+      "location": "Alpine Ridge, Mountain Retreat"
+      
+    },
+    {
+      "image": "relevant_image6.jpg",
+      "estate_title": "Urban Penthouse Oasis",
+      "id": "006",
+      "segment_name": "Residential",
+      "description": "Experience luxury living at its peak in this stunning urban penthouse offering panoramic city views and unparalleled sophistication. With contemporary design, premium amenities, and a private rooftop terrace, it's the epitome of cosmopolitan living.",
+      "price": "$6,000,000",
+      "status": "sale",
+      "area": "4000 sq ft",
+      "location": "Metropolis Heights, Urban Skyline"
+     
+    },
+    {
+      "image": "relevant_image7.jpg",
+      "estate_title": "Seaside Retreat Condo",
+      "id": "007",
+      "segment_name": "Residential",
+      "description": "Escape to this serene seaside retreat condo overlooking pristine beaches and azure waters. With modern design, resort-style amenities, and direct beach access, it's an oasis of relaxation and luxury.",
+      "price": "$900,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "Ocean Breeze Condos, Coastal Paradise"
+     
+    },
+    {
+      "image": "relevant_image8.jpg",
+      "estate_title": "Rustic Mountain Lodge",
+      "id": "008",
+      "segment_name": "Residential",
+      "description": "Discover the charm of mountain living in this rustic lodge nestled amidst towering pines and majestic peaks. With cozy interiors, a crackling fireplace, and access to hiking trails, it's a nature lover's paradise.",
+      "price": "$750,000",
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "Pinecrest Estates, Mountain Wilderness"
+   
+    },
+    {
+      "image": "https://i.postimg.cc/8cCxbKGC/images.jpg",
+      "estate_title": "Luxury Beachfront Villa",
+      "id": "009",
+      "segment_name": "Residential",
+      "description": "This exquisite beachfront villa offers unparalleled luxury and breathtaking ocean views. With expansive living spaces, private beach access, and resort-style amenities, it epitomizes coastal living at its finest.",
+      "price": "$5,000,000",
+      "status": "sale",
+      "area": "6000 sq ft",
+      "location": "Sunset Cove, Coastal Paradise"
+   
+      
+    }
+  ]
+  

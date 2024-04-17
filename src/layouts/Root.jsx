@@ -11,7 +11,7 @@ const Root = () => {
             <div className="min-h-[calc(100vh-1640px)]">
             <Outlet></Outlet>
             </div>
-            <Footer></Footer>
+           <div className="mb-2"><Footer></Footer></div> 
         </div>
     );
 };
