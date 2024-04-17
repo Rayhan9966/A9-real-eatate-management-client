@@ -66,11 +66,13 @@ if(user){
           </label>
         </div>
         <div className="form-control mt-6">
-         <button className="btn btn-primary">Login</button>
+         <button className="btn btn-accent">Login</button>
         </div>
       </form>
-      <button onClick={handleGoogleLogin}>Google login</button>
-      <button onClick={handleFacebookLogin}>Facebook login</button>
+      <div className='flex justify-between'>
+      <button className="btn btn-secondary" onClick={handleGoogleLogin}>Google login</button>
+      <button className="btn btn-primary" onClick={handleFacebookLogin}>Facebook login</button>
+      </div>
     </div>
   </div>
 </div>
